@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/material-colors/dist/colors.css">
+    <link rel="stylesheet" href="app.css">
+
+  </head>
+  <body>
+
+      <div id="top">
+
+		<header>
+			<h1 class="logo">Ping</h1>
+			<button class="burger">x</button>
+		</header>
+
+		<div id="menu">
+			<ul>
+				<li>Om oss</li>
+				<li>Lagene våre</li>
+                <li>Baner</li>
+                <li>Dommere</li>
+				<li>Kampkalender</li>
+				<li>Arrangement</li>
+			</ul>
+		</div>
+
+	</div>
+
+
+
+	<div id="content">
+
+		<main>
+
+            <ul>
+                <li>
+                    Om oss
+                    <ul>
+                        <li>Styret</li>
+                        <li>Barn</li>
+                        <li>Ungdom</li>
+                        <li>Voksne</li>
+                    </ul>
+                </li>
+                <li>Lagene</li>
+                <li>Baner</li>
+                <li>Dommere</li>
+                <li>Kampkalender</li>
+                <li>Barn</li>
+                <li>Ungdom</li>
+                <li>Voksne</li>
+                <li>Arrangement</li>
+            </ul>
+
+            {{#block 'main'}}{{/block}}
+        </main>
+
+		{{>footer}}
+
+	</div>
+
+    <script>
+		(function() {
+			"use strict";
+
+
+
+			var button = document.querySelector('.burger'), body = document.body;
+
+			 button.addEventListener('click', function () {
+			     body.classList.toggle('showmenu');
+			 })
+
+		}());
+
+	</script>
+
+      <!-- <h1>test</h1> -->
+
+<!--     {{>header}}
+
+{{>menu}}
+
+<main>
+    {{#block 'main'}}{{/block}}
+</main>
+
+{{>footer}} -->
+
+    <!-- <script src="build.js"></script> -->
+
+  </body>
+</html>
