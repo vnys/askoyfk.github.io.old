@@ -12,5 +12,5 @@ gulp.task('browsersync', function() {
  gulp.watch(['app/**/*.*'], reload);
  gulp.watch(['src/**/*.js'], ['browserify']);
  gulp.watch(['src/**/*.{json,hbs}'], ['render']);
- gulp.watch(['src/**/*.scss'], ['styles']);
+ gulp.watch(['src/**/*.less'], ['less']);
 });
