@@ -1,0 +1,33 @@
+{
+  "name": "material-colors",
+  "homepage": "https://github.com/shuhei/material-colors",
+  "version": "0.2.0",
+  "description": "Colors of Google's Material Design made available to coders",
+  "main": "colors.js",
+  "keywords": [
+    "colors",
+    "palette",
+    "design",
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "stylus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shuhei/material-colors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shuhei/material-colors/issues"
+  },
+  "author": {
+    "name": "Shuhei Kagawa",
+    "email": "shuhei.kagawa@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "cheerio": "^0.17.0"
+  }
+}
