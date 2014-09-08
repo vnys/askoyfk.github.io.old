@@ -1,0 +1,18 @@
+.megafooter {
+    padding: 0 calc(5% - 30px);
+    box-sizing: border-box;
+    background: #f90;
+    display: table;
+    border-spacing: 30px 20px;
+    width: 100%;
+    div {
+        display: table-cell;
+        width: 33%;
+    }
+}
+
+.footer {
+    padding: 10px 5%;
+    background: #ff0;
+    clear: both;
+}
