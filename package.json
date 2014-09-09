@@ -30,14 +30,12 @@
     "handlebars-layouts": "latest",
     "hbsfy": "latest",
     "require-dir": "latest",
-    "vinyl-source-stream": "latest"
+    "vinyl-source-stream": "latest",
+    "gulp-git": "^0.5.0"
   },
   "browserify": {
     "transform": [
       "hbsfy"
     ]
-  },
-  "dependencies": {
-    "gulp-git": "^0.5.0"
   }
 }
