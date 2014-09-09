@@ -14,8 +14,19 @@ var AUTOPREFIXER_BROWSERS = [
   'bb >= 10'
 ];
 
-gulp.task('styles', function () {
-    return gulp.src('src/scss/app.scss')
+gulp.task('sass', function () {
+
+    // return gulp.src('src/scss/app.scss')
+    //     .pipe(sass({
+    //         style: 'expanded',
+    //         sourcemap: true,
+    //         sourcemapPath: '../scss'
+    //     }))
+    //     .on('error', console.error.bind(console))
+    //     .pipe(prefixer(AUTOPREFIXER_BROWSERS))
+    //     .pipe(gulp.dest('app'));
+
+    return gulp.src('dependencies/web-starter-kit/app/styles/components/components.scss')
         .pipe(sass({
             style: 'expanded',
             sourcemap: true,
@@ -23,5 +34,5 @@ gulp.task('styles', function () {
         }))
         .on('error', console.error.bind(console))
         .pipe(prefixer(AUTOPREFIXER_BROWSERS))
-        .pipe(gulp.dest('app'));
+        .pipe(gulp.dest('./src/less/web-starter-kit/'));
 });
